@@ -26,11 +26,8 @@ function App() {
                     <div>
                         <img src={logoAdventure}className="image"/>
                     </div>
-
-                </div>
-                <div style={{display: "flex", flexDirection: "row", justifyContent: "space-around", marginTop: "24px", width: "100%"}}>
                     <div>
-                        <img src={logoBeer}/>
+                        <img src={logoBeer} style={{height: "15vh"}}/>
                     </div>
                 </div>
             </header>

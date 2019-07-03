@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import Countdown from "./Countdown"
-import moment from "moment";
 import logo from "./logo-one-week.png"
 import logoDivesoft from "./divesoft-logo.svg"
 import logoDivers from "./divers-direct-logo.jpg"
 import logoAdventure from "./adventure-menu_logo.jpeg"
 import logoBeer from "./logo_nove.jpeg"
+import logoCopy from "./tshirts4U_logo-1.png"
 
 function App() {
     return (
@@ -25,6 +25,9 @@ function App() {
                     </div>
                     <div>
                         <img src={logoAdventure}className="image"/>
+                    </div>
+                    <div>
+                        <img src={logoCopy}className="image"/>
                     </div>
                     <div>
                         <img src={logoBeer} style={{height: "15vh"}}/>

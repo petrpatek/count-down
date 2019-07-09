@@ -7,12 +7,15 @@ import logoDivers from "./divers-direct-logo.jpg"
 import logoAdventure from "./adventure-menu_logo.jpeg"
 import logoBeer from "./logo_nove.jpeg"
 import logoCopy from "./tshirts4U_logo-1.png"
+const start =  new Date('2019-07-03T12:07:00').getTime();
+
+
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <Countdown date={Date.now()}/>
+                <Countdown date={start}/>
                 <div>
                     <img src={logo}/>
                 </div>

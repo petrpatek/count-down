@@ -18,10 +18,15 @@ class Countdown extends Component {
             min: 0,
             sec: 0,
         }
+        this.keydownHandler = this.keydownHandler.bind(this)
     }
 
     UNSAFE_componentWillMount(nextProps, nextState) {
         this.setState( {date: this.props.date})
+    }
+
+    keydownHandler(e){
+        if(e.keyCode===13 && e.ctrlKey) this.stop()
     }
 
     componentDidMount() {
@@ -30,6 +35,7 @@ class Countdown extends Component {
            const timeNow = this.calculateCountdown(this.state.date);
            this.setState(timeNow);
         }, 1000);
+        document.addEventListener('keydown',this.keydownHandler);
     }
 
     componentWillUnmount() {

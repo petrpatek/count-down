@@ -9,7 +9,7 @@ import logoFix from "./logo-fix.png"
 import logoZel from "./logo-zelezarstvi.png"
 import szdt from "./szdt.png"
 import mana from "./mana.png"
-const start =  new Date('2021-06-25T12:00:00').getTime();
+const start =  new Date('2021-06-25T12:09:00').getTime(); ///
 
 
 

@@ -17,6 +17,10 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
+                <div style={{display: "flex", justifyContent: "space-between", "alignItems": "center", paddingLeft: "32px", "width": "100%"}}>
+                    <h3 style={{ paddingLeft: "32px", color: "#FEFE38"}}>A.C.4.U. s.r.o.</h3>
+                    <h3 style={{ paddingRight: "32px", color: "#FEFE38" }}>Horizont3000 z.s</h3>
+                </div>
                 <Countdown date={start}/>
                 <div>
                     <img src={logo} style={{ height: "50vh" }}/>

@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import Countdown from "./Countdown"
-import logo from "./logo-one-week.png"
+import logo from "./kosmow.png"
+import logo2 from "./logo2.png"
 import logoDivesoft from "./divesoft-logo.svg"
-import logoDivers from "./divers-direct-logo.jpg"
 import logoAdventure from "./adventure-menu_logo.jpeg"
-import logoBeer from "./logo_nove.jpeg"
-import logoCopy from "./tshirts4U_logo-1.png"
-const start =  new Date('2019-07-03T12:07:00').getTime();
+import logoFix from "./logo-fix.png"
+import logoZel from "./logo-zelezarstvi.png"
+import szdt from "./szdt.png"
+import mana from "./mana.png"
+const start =  new Date('2021-06-25T12:00:00').getTime();
 
 
 
@@ -17,24 +19,29 @@ function App() {
             <header className="App-header">
                 <Countdown date={start}/>
                 <div>
-                    <img src={logo}/>
+                    <img src={logo} style={{ height: "50vh" }}/>
+                    <img src={logo2} style={{ height: "50vh" }}/>
                 </div>
                 <div style={{display: "flex", flexDirection: "row", justifyContent: "space-around", marginTop: "24px", width: "100%"}}>
                     <div>
                         <img src={logoDivesoft} className="image" />
                     </div>
                     <div>
-                        <img src={logoDivers}className="image"/>
+                        <img src={mana} className="image" />
                     </div>
                     <div>
                         <img src={logoAdventure}className="image"/>
                     </div>
                     <div>
-                        <img src={logoCopy}className="image"/>
+                        <img src={logoFix} className="image" style={{ height: "12vh" }} />
+
                     </div>
                     <div>
-                        <img src={logoBeer} style={{height: "15vh"}}/>
+                        <img src={logoZel} className="image" style={{ height: "15vh" }} />
                     </div>
+                    <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+                        <img src={szdt} className="image" style={{ height: "5vh" }} />
+                        </div>
                 </div>
             </header>
         </div>
